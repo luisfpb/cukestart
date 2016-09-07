@@ -9,6 +9,6 @@ module Cukestart
         File.dirname(__FILE__) + :project_name
       end
 
-
     end
+  end
 end

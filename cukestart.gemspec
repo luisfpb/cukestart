@@ -20,5 +20,6 @@ Gem::Specification.new do |gem|
   gem.license       = 'MIT'
 
   gem.add_dependency 'thor', '0.19.1'
+  gem.add_dependency 'pry'
 
 end
