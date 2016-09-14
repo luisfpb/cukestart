@@ -7,7 +7,7 @@ module Cukestart
       argument :project_name, :desc => "Name of the root directory"
 
       def self.source_root
-        File.dirname(__FILE__) + :project_name
+        File.dirname(__FILE__)
       end
 
       def create_folders
@@ -16,6 +16,13 @@ module Cukestart
         empty_directory("#{project_name}/features/support")
         empty_directory("#{project_name}/features/step_definitions")
       end
+
+      def generate_cucumber_yml
+        template('templates/cucumber.tt', "#{project_name}/cucumber.yml")
+      end
+
+
+
     end
   end
 end
