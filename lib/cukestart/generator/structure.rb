@@ -17,11 +17,9 @@ module Cukestart
         empty_directory("#{project_name}/features/step_definitions")
       end
 
-      def generate_cucumber_yml
-        template('templates/cucumber.tt', "#{project_name}/cucumber.yml")
+      def copy_cucumber_yml
+        copy_file('files/cucumber.yml', "#{project_name}/cucumber.yml")
       end
-
-
 
     end
   end
