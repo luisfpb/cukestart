@@ -4,7 +4,7 @@ module Cukestart
   module Generator
     class Structure < Thor::Group
       include Thor::Actions
-      argument :project_name, :desc => "Name of the root directory", :default => "teste_gem"
+      argument :project_name, :desc => "Name of the root directory"
 
       def self.source_root
         File.dirname(__FILE__) + :project_name

@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
-require 'cukestart/generator/structure'
-Cukestart::Generator::Structure.start
+require 'cukestart/cli'
+Cukestart::Cli.start
