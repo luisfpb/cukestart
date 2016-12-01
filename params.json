@@ -1,0 +1,6 @@
+{
+  "name": "Cukestart",
+  "tagline": "",
+  "body": "# CukeStart WIP\r\n\r\nCukeStart generates and help you to maintain a Cucumber project structure from the command line.\r\n\r\n![](<link>)\r\n\r\n## Features\r\n\r\n- Create a cucumber project structure\r\n- ...\r\n\r\n## Installation\r\n\r\n```bash\r\n$gem install cukestar\r\n```\r\n\r\n\r\n\r\n## Usage\r\n\r\n### Basic usage\r\n\r\n```bash\r\n$cukestart project myproject\r\n```\r\n\r\n## License\r\n\r\nCukeStart is released under the [MIT License](LICENSE).\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
