@@ -5,7 +5,7 @@ $:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name        = 'cukestart'
-  gem.version     = '0.1.0'
+  gem.version     = File.read(File.expand_path('../lib/cukestart/version', __FILE__))
   gem.date        = '2016-09-05'
   gem.summary     = "Cukestart"
   gem.description = "Helps you to start and maintain your cucumber projects!"
