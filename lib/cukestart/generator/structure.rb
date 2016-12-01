@@ -5,8 +5,8 @@ module Cukestart
     class Structure < Thor::Group
       include Thor::Actions
       argument :project_name, :desc => "Name of the root directory"
-      argument :front, :desc => "If it will be a front test project", :default => true
-      argument :page_object, :desc => "Will use page_object", :default => true
+      argument :front, :desc => "If it will be a front test project", :default => FALSE
+      argument :page_object, :desc => "Will use page_object", :default => FALSE
 
       def self.source_root
         File.dirname(__FILE__)
@@ -33,7 +33,8 @@ module Cukestart
       end
 
       def create_capybara
-        template('templates/capybara.tt', "#{project_name}/features/support/capybara.rb")
+        template('templates/capybara.tt',
+                "#{project_name}/features/support/capybara.rb") if front
       end
 
     end
