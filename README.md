@@ -4,11 +4,6 @@ CukeStart generates and help you to maintain a Cucumber project structure from t
 
 ![](<link>)
 
-## Features
-
-- Create a cucumber project structure
-- ...
-
 ## Installation
 
 ```bash
