@@ -4,18 +4,17 @@ CukeStart generates and help you to maintain a Cucumber project structure from t
 
 ![](<link>)
 
-## Features
-
-- Create a cucumber project structure
-- ...
-
 ## Installation
 
 ```bash
-$gem install cukestar
+$gem install cukestart
 ```
 
-
+## Features
+- Create a cucumber project structure
+    - setup capybara
+    - setup siteprism
+- ...
 
 ## Usage
 
@@ -23,6 +22,7 @@ $gem install cukestar
 
 ```bash
 $cukestart project myproject
+$cukestart project myproject --front --page_object
 ```
 
 ## License
