@@ -17,7 +17,7 @@ module Cukestart
         empty_directory("#{project_name}/features")
         empty_directory("#{project_name}/features/support")
         empty_directory("#{project_name}/features/step_definitions")
-        empty_directory("#{project_name}/features/pages") if page_object & front
+        empty_directory("#{project_name}/features/pages") if page_object
       end
 
       def copy_cucumber_yml
