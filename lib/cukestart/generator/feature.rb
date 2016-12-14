@@ -11,7 +11,13 @@ module Cukestart
       end
 
       def is_cucumber_project
-        binding.pry
+        if !Dir.exist?("features") or !File.exist?("features/support/env.rb")
+          abort("It's not the root of a cucumber project!")
+        end
+      end
+
+      def create_feature
+        template('templates/feature.tt', "features/#{feature_name}.feature")
       end
 
     end

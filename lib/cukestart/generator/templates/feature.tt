@@ -2,7 +2,7 @@
 Feature: <%= feature_name %>
   Feature description
 
-	Scenario: Your scenario
-		Given I have something
-		When  I do something
-		Then  I expect something
+  Scenario: Your scenario
+    Given I have something
+    When  I do something
+    Then  I expect something
