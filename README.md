@@ -14,15 +14,23 @@ $gem install cukestart
 - Create a cucumber project structure
     - setup capybara
     - setup siteprism
-- ...
+- Generate a feature file from template
 
 ## Usage
 
-### Basic usage
+### Create Project
 
 ```bash
 $cukestart project myproject
-$cukestart project myproject --front --page_object
+$cukestart p myproject --front --page_object
+$cukestart p myproject -fp
+```
+
+### Generate Feature
+
+```bash
+$cukestart feature login
+$cukestart f login
 ```
 
 ## License
