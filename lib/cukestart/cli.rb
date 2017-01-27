@@ -24,5 +24,23 @@ module Cukestart
     def version
       puts "Cukestart #{File.read(File.expand_path('../version', __FILE__))}"
     end
+
+    desc 'list', 'List all features and scenarios in project or folder'
+    method_option :feature, :desc => 'List all feature and its scenarios if asked', :type => :boolean
+    method_option :scenario, :desc => 'List all scenarios', :type => :boolean
+    def list
+      features = `ls -d -1 **/* \| grep '\.feature'`
+      features = features.split("\n")
+      features.each do |feature|
+        puts "--- #{feature}  ---"
+        feature_name = `cat #{feature} | grep 'Feature:'`
+        puts feature_name if options[:feature]
+        scenarios = `cat #{feature} | grep 'Scenario:'`
+        scenarios = scenarios.split("\n")
+        scenarios.each do |scenario|
+          puts scenario if options[:scenario]
+        end
+      end
+    end
   end
 end
