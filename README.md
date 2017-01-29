@@ -15,6 +15,7 @@ $gem install cukestart
     - setup capybara
     - setup siteprism
 - Generate a feature file from template
+- List all features, steps  by folder 
 
 ## Usage
 
